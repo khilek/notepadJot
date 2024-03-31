@@ -21,6 +21,7 @@ export class JotsController {
     let jotsContent = ''
     jots.forEach(jot => jotsContent += jot.jotListTemplate)
     setHTML('jot-lists', jotsContent)
+    setHTML('jots-title', `Jot List (${jots.length})`)
   }
 
 
