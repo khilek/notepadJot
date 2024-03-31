@@ -1,0 +1,64 @@
+<div class="container">
+
+  <div class="card text-center">
+    <form onsubmit="app.JotsController.createJot()">
+      <div class="mb-3 d-flex justify-content-around">
+        <label for="name">Create New Jot</label>
+        <input type="text" name="name" id="name" required minlength="3" maxlength="15">
+
+
+        <div class="mb-3">
+          <label for="color">Jot Color</label>
+          <select name="color" id="jot-color" required>
+            <option value="#ff0022">RED</option>
+            <option value="#008eff">BLUE</option>
+            <option value="#f5b911">YELLOW</option>
+            <option value="#008d06">GREEN</option>
+            <option value="#008d06">GREEN</option>
+          </select>
+        </div>
+        <button type="submit">Create</button>
+      </div>
+
+
+      <h4>Jot on Notepad</h4>
+      <section id="active-jot" class="row">
+        <div>
+
+          <label for="jot-body">Jot Body</label>
+          <textarea name="body" id="jot-body" cols="40" rows="10"></textarea>
+
+        </div>
+      </section>
+    </form>
+
+  </div>
+
+
+
+
+
+  <h1 class="text-center">Jot List</h1>
+  <section id="jot-lists" class="row">
+
+    <!-- <div class="col-12 d-flex justify-content-around">
+      <p>School Notes</p>
+      <p>Color</p>
+      <p>Created Date</p>
+      <p>Last Viewed</p>
+    </div> -->
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
